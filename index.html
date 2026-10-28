@@ -1,21 +1,44 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delta Lab</title>
-    <h1>Delta Lab</h1>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delta Lab</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-    <select id="favorite">
+  <h1>Delta Lab</h1>
+
+  <form id="profileForm">
+    <div>
+      <label for="nameInput">Name:</label>
+      <input type="text" id="nameInput" name="name">
+    </div>
+
+    <div>
+      <label for="favoriteInput">Favorite:</label>
+      <select id="favoriteInput" name="favorite">
         <option value="">Select an option</option>
-    </select>
+      </select>
+    </div>
 
-    <script src="/assets/script.js"></script>
+    <div>
+      <label for="commentInput">Comment:</label>
+      <textarea id="commentInput" name="comments"></textarea>
+    </div>
 
+    <button type="submit" id="btnCreateProfile">Create Profile</button>
+  </form>
+
+  <hr>
+
+  <div id="profileOutput">
+    <!-- profile will render here -->
+  </div>
+
+  <button id="btnClearSession" type="button">Clear Session</button>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>

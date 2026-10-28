@@ -1,0 +1,123 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #F5F0E9;
+  color: #3D405B;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+h1 {
+  margin-top: 0;
+  color: #5C4B3C;
+}
+
+h2 {
+  color: #5C4B3C;
+}
+
+#profileForm {
+  background: #F8F4F0;
+  border: 1px solid #E0D6C8;
+  border-radius: 10px;
+  padding: 1.25rem;
+  max-width: 420px;
+  margin-bottom: 1.5rem;
+}
+
+#profileForm div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: #5C4B3C;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #C9BBA8;
+  border-radius: 6px;
+  background: #fff;
+  color: #3D405B;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #D9795C;
+  box-shadow: 0 0 0 2px rgba(217, 121, 92, 0.2);
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* ===== Buttons ===== */
+button {
+  font: inherit;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 0.55rem 1rem;
+  border: none;
+}
+
+#btnCreateProfile {
+  background-color: #D9795C;
+  color: #fff;
+}
+
+#btnCreateProfile:hover {
+  background-color: #c4664c;
+}
+
+#btnClearSession {
+  background-color: #E8E0D5;
+  color: #5C4B3C;
+  border: 1px solid #C9BBA8;
+  margin-top: 0.75rem;
+}
+
+#btnClearSession:hover {
+  background-color: #ddd4c6;
+}
+
+/* ===== Profile output ===== */
+#profileOutput {
+  background: #F8F4F0;
+  border: 1px solid #E0D6C8;
+  border-radius: 10px;
+  padding: 1.25rem;
+  max-width: 420px;
+  margin-bottom: 1rem;
+}
+
+#profileOutput img {
+  display: block;
+  margin-top: 0.75rem;
+  border: 3px solid #D9795C;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+#profileOutput p {
+  margin: 0.4rem 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #E0D6C8;
+  margin: 1.5rem 0;
+  max-width: 420px;
+}
